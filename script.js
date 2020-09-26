@@ -1,56 +1,158 @@
 /**
- * DONE: Create a keydown listener to track what keys are hit
- * DONE: Create a Beat class to represent the beat object in utils.js
- * DONE: Complete triggerBeat() to play upon the press of a,s,d,f,g,h,j,k,l
- * DONE: Button pt1: Initialize color and element values
- * DONE: Button pt2: Set button color upon initialization | Initialize button in beats["65"]
- * DONE: Button pt3: Complete select function to set the color and shadow of button upon pressing
- * DONE: Button pt4: Call the select() function upon key press ;)
- * DONE: Button pt5: Add transition for button selection
- * DONE: Button pt6: Remove the button style upon transition end | Use deselect function
- * DONE: Complete all button instances with the following colors
- * DONE: Add background image
- * First 3: #00fffe
- * 4,5,6,7: #FF00FF
- * 8, 9: #FFFFFF
+ * Rebuilding the beatBox into EDM LaunchPad
  */
 
 let beats = {
-  65: {
+  //Bass
+  49: {
     beat: new Beat("./assets/Piano Chord 331.mp3"),
-    button: new Button("#00fffe", 65),
+    button: new Button("#00fffe", 49),
+  },
+  50: {
+    beat: new Beat("./assets/Piano Chord 209.mp3"),
+    button: new Button("#00fffe", 50),
+  },
+  51: {
+    beat: new Beat("./assets/Piano Chord 208.mp3"),
+    button: new Button("#00fffe", 51),
+  },
+  52: {
+    beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
+    button: new Button("#00fffe", 52),
+  },
+  53: {
+    beat: new Beat("./assets/Drum Snare Roll.mp3"),
+    button: new Button("#00fffe", 53),
+  },
+  54: {
+    beat: new Beat("./assets/PREL Musical 57.mp3"),
+    button: new Button("#00fffe", 54),
+  },
+  55: {
+    beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
+    button: new Button("#00fffe", 55),
+  },
+  56: {
+    beat: new Beat("./assets/Musical Compos 33.mp3"),
+    button: new Button("#00fffe", 56),
+  },
+  57: {
+    beat: new Beat("./assets/Musical Orches 4.mp3"),
+    button: new Button("#00fffe", 57),
+  },
+
+  //Drum Loop
+  81: {
+    beat: new Beat("./assets/Piano Chord 331.mp3"),
+    button: new Button("#FF00FF", 81),
+  },
+  87: {
+    beat: new Beat("./assets/Piano Chord 208.mp3"),
+    button: new Button("#FF00FF", 87),
+  },
+  69: {
+    beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
+    button: new Button("#FF00FF", 69),
+  },
+  82: {
+    beat: new Beat("./assets/Drum Snare Roll.mp3"),
+    button: new Button("#FF00FF", 82),
+  },
+  84: {
+    beat: new Beat("./assets/PREL Musical 57.mp3"),
+    button: new Button("#FF00FF", 84),
+  },
+  89: {
+    beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
+    button: new Button("#FF00FF", 89),
+  },
+  85: {
+    beat: new Beat("./assets/Musical Compos 33.mp3"),
+    button: new Button("#FF00FF", 85),
+  },
+  73: {
+    beat: new Beat("./assets/Musical Orches 4.mp3"),
+    button: new Button("#FF00FF", 73),
+  },
+  79: {
+    beat: new Beat("./assets/Piano Chord 331.mp3"),
+    button: new Button("#FF00FF", 79),
+  },
+
+  //FX Loop
+  80: {
+    beat: new Beat("./assets/Piano Chord 209.mp3"),
+    button: new Button("#FFFFFF", 80),
+  },
+  65: {
+    beat: new Beat("./assets/Piano Chord 208.mp3"),
+    button: new Button("#FFFFFF", 65),
   },
   83: {
-    beat: new Beat("./assets/Piano Chord 209.mp3"),
-    button: new Button("#00fffe", 83),
+    beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
+    button: new Button("#FFFFFF", 83),
   },
   68: {
-    beat: new Beat("./assets/Piano Chord 208.mp3"),
-    button: new Button("#00fffe", 68),
+    beat: new Beat("./assets/Drum Snare Roll.mp3"),
+    button: new Button("#FFFFFF", 68),
   },
   70: {
-    beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
-    button: new Button("#FF00FF", 70),
+    beat: new Beat("./assets/PREL Musical 57.mp3"),
+    button: new Button("#FFFFFF", 70),
   },
   71: {
-    beat: new Beat("./assets/Drum Snare Roll.mp3"),
-    button: new Button("#FF00FF", 71),
+    beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
+    button: new Button("#FFFFFF", 71),
   },
   72: {
-    beat: new Beat("./assets/PREL Musical 57.mp3"),
-    button: new Button("#FF00FF", 72),
+    beat: new Beat("./assets/Musical Compos 33.mp3"),
+    button: new Button("#FFFFFF", 72),
   },
   74: {
-    beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
-    button: new Button("#FF00FF", 74),
+    beat: new Beat("./assets/Musical Orches 4.mp3"),
+    button: new Button("#FFFFFF", 74),
   },
   75: {
-    beat: new Beat("./assets/Musical Compos 33.mp3"),
+    beat: new Beat("./assets/Piano Chord 331.mp3"),
     button: new Button("#FFFFFF", 75),
   },
+
+  //Synth Loop
   76: {
+    beat: new Beat("./assets/Piano Chord 209.mp3"),
+    button: new Button("#ff3a17", 76),
+  },
+  90: {
+    beat: new Beat("./assets/Piano Chord 208.mp3"),
+    button: new Button("#ff3a17", 90),
+  },
+  88: {
+    beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
+    button: new Button("#ff3a17", 88),
+  },
+  67: {
+    beat: new Beat("./assets/Drum Snare Roll.mp3"),
+    button: new Button("#ff3a17", 67),
+  },
+  86: {
+    beat: new Beat("./assets/PREL Musical 57.mp3"),
+    button: new Button("#ff3a17", 86),
+  },
+  66: {
+    beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
+    button: new Button("#ff3a17", 66),
+  },
+  78: {
+    beat: new Beat("./assets/Musical Compos 33.mp3"),
+    button: new Button("#ff3a17", 78),
+  },
+  77: {
     beat: new Beat("./assets/Musical Orches 4.mp3"),
-    button: new Button("#FFFFFF", 76),
+    button: new Button("#ff3a17", 77),
+  },
+  48: {
+    beat: new Beat("./assets/Musical Orches 4.mp3"),
+    button: new Button("#ff3a17", 48),
   },
 };
 

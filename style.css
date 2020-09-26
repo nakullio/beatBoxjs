@@ -1,20 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-image: url("./assets/background.jpeg");
   background-size: cover;
+  background-position: top center;
 }
 
 .container {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
+  position: absolute;
 }
 
-.beatbox {
-  width: 600px;
-  height: 600px;
+.beatboxBass,
+.beatboxDrum,
+.beatboxFX,
+.beatboxSynth {
+  width: 300px;
+  height: 300px;
   background: #333;
   border-radius: 20px;
   display: flex;
@@ -24,8 +37,8 @@ body {
 }
 
 .beat {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   flex-basis: 29%;
   display: flex;
   justify-content: center;
@@ -33,8 +46,8 @@ body {
 }
 
 .beat .button {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
   border: 5px solid aqua;
   color: white;
