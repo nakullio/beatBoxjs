@@ -75,7 +75,7 @@ let beats = {
     button: new Button("#FF00FF", 73),
   },
   79: {
-    beat: new Beat("./assets/hdrum47.mp3"),
+    beat: new Beat("./assets/hdrum41.mp3"),
     button: new Button("#FF00FF", 79),
   },
 
@@ -119,11 +119,11 @@ let beats = {
 
   //Synth Loop
   76: {
-    beat: new Beat("./assets/hsynth18.mp3"),
+    beat: new Beat("./assets/hsynth10.mp3"),
     button: new Button("#ff3a17", 76),
   },
   90: {
-    beat: new Beat("./assets/hsynth21.mp3"),
+    beat: new Beat("./assets/hsynth16.mp3"),
     button: new Button("#ff3a17", 90),
   },
   88: {
@@ -143,7 +143,7 @@ let beats = {
     button: new Button("#ff3a17", 66),
   },
   78: {
-    beat: new Beat("./assets/hsynth19.mp3"),
+    beat: new Beat("./assets/hsynth14.mp3"),
     button: new Button("#ff3a17", 78),
   },
   77: {
