@@ -32,7 +32,7 @@ Check this out: [EDM Beatbox](https://naku-ma.github.io/beatBoxjs/.)
 ## Technologies
 
 - Hyper Text Markup Language (HTML)
-- Cascading Style Sheets (CSS)jhhhhhhh3ogqy4ubgodi1vycwU AKTVBJH
+- Cascading Style Sheets (CSS)
 - Javascript
 
 ## Setup
