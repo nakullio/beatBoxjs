@@ -127,7 +127,7 @@ let beats = {
     button: new Button("#ff3a17", 90),
   },
   88: {
-    beat: new Beat("./assets/hsynth3.mp3"),
+    beat: new Beat("./assets/hsynth10.mp3"),
     button: new Button("#ff3a17", 88),
   },
   67: {
