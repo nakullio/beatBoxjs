@@ -27,7 +27,7 @@ EDM Beatbox project was build to apply my knowledge of learning Javascript, HTML
 
 This EDM Beatbox works using keyboard keyCode, so by pressing the keyboard as refer to Sounds slots, the music will start to play with variety duration each button.
 
-Check this out: [EDM Beatbox](https://naku-ma.github.io/beatBoxjs/.)
+Check this out: [EDM Beatbox](https://nakullio.github.io/beatBoxjs/)
 
 ## Technologies
 
